@@ -1,0 +1,193 @@
+<html>
+
+	<head>
+			<meta charset="utf-8" />
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<title></title>
+
+<style>
+body{
+
+background: rgb(255, 114, 71);
+
+}
+
+
+	section#segura-items {
+
+		margin: 13% auto;
+
+		display: block;
+
+		position: relative;
+
+		background: #FFF;
+
+		padding: 25px;
+
+		border-top-left-radius: 50px;
+
+		box-shadow: 20px 6px 29px rgba(0, 0, 0, 0.67);
+
+		width: 420px;
+
+
+	}
+
+
+
+	h3 {
+
+		font-size: 135%;
+
+		text-align: center;
+
+		margin-top: 5px;
+
+	}
+
+
+input[type="number"]{
+
+		border-radius:2px;
+
+		border: 1px solid #cacaca;
+
+		display:block;
+
+		margin: 0 auto;
+
+		padding: 12px;
+
+		margin-top: 12px;
+
+		width: 80%;
+
+}
+
+	input[type="text"],
+
+	select{
+
+	border-radius:2px;
+
+	border: 1px solid #cacaca;
+
+	display:block;
+
+	margin: 0 auto;
+
+	padding: 12px;
+
+	margin-top: 12px;
+
+	width: 80%;
+
+	}
+
+
+
+	input[type="submit"]{
+
+	display:block;
+
+	margin: 11px auto;
+
+	background:#00BFFF;
+
+	color:#FFF;
+
+	text-transform:uppercase;
+
+	width: 80%;
+
+	border: 0px;
+
+	padding: 12px;
+
+	border-radius: 5px;
+
+	font-size: 117%;
+
+	font-weight: bold;
+
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.78);
+
+	
+    
+
+	}
+
+
+
+	input[type="submit"]:hover{
+
+	background: #a92b00;
+
+	text-shadow: none;
+
+	}
+
+
+
+	span#status {
+
+	position: fixed;
+
+	background: transparent;
+
+	width: 100%;
+
+	bottom: 0;
+
+	padding: 14px;
+
+	color: #00bfff;
+
+	}
+
+	p{
+		float: left;
+	}
+
+</style>
+
+
+</head>
+
+<body>
+
+	<section id="segura-items">
+
+	<h3>Façam o seguinte Formulário</h3>
+
+	<form method="POST" id="meuForm">
+
+	<p>Nome:</p><input type="text" name="nome" placeholder="Nome completo" required/><br>
+
+	<p>Idade:</p><input type="number" name="idade" placeholder="Idade" required/><br>
+
+	<p>Sexo:</p><select type="text" name="sexo" required>
+
+			<option value=""></option>	
+			<option value="M">Masculino</option>
+			<option value="F">Feminino</option>
+
+	</select><br>
+
+	<p>Estuda:<input type="radio" name="estuda" placeholder="Estuda" required/>Sim
+	<input type="radio" name="estuda" placeholder="Estuda" required/>Não<br></p>
+
+	
+
+	<input type="submit" value="Enviar">
+
+	</form>
+
+	</section>
+
+	<span id="status"></span>
+
+</body>
+
+</html>
